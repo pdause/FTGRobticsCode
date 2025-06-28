@@ -9,7 +9,7 @@ int main(void)
     std::cout << "&x = " << &x << std::endl;
 
     //Int pointer that points to x
-    int* y = &x;
+    int *y = &x;
 
     //This will not compile
     //*DEREFERENCE!
@@ -24,7 +24,7 @@ int main(void)
     //more correct we are changing the value
     //pointed to by y, which is x
     *y = 3;
-    //x has not changed 
+    //x has changed 
     std::cout << "x = " << x << std::endl;
     //the dereferenced value of y (*y)
     std::cout << "*y = " << *y << std::endl;
